@@ -1,5 +1,5 @@
 # swproxy 
-[![NPM version][npm-image]][npm-url] [![wercker status](https://app.wercker.com/status/60a2d039560adbf52b7b1467b49fdc7a/m/master "wercker status")](https://app.wercker.com/project/bykey/60a2d039560adbf52b7b1467b49fdc7a)
+[![NPM version][npm-image]][npm-url] [![wercker status](https://app.wercker.com/status/ad827be9e837ad12afdd9c0b63e83bf6/m/master "wercker status")](https://app.wercker.com/project/bykey/ad827be9e837ad12afdd9c0b63e83bf6)
 [![Dependency Status][daviddm-image]][daviddm-url]
 
 ## work in progress
