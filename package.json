@@ -1,0 +1,39 @@
+{
+  "name": "swproxy-mod-rewrite",
+  "version": "0.0.0-beta.1",
+  "description": "base package to write mods for the swproxy library",
+  "homepage": "http://www.alexanderbartels.com/swproxy-www",
+  "author": {
+    "name": "Alexander Bartels",
+    "url": "http://www.alexanderbartels.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "swproxy", "serviceworker", "proxy"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-babel": "^5.1.0",
+    "del": "^2.0.2",
+    "babel-core": "^5.5.0",
+    "isparta": "^3.0.3"
+  },
+  "repository": "https://github.com/alexanderbartels/swproxy-mod-rewrite.git",
+  "scripts": {
+    "prepublish": "./node_modules/.bin/gulp prepublish",
+    "test": "./node_modules/.bin/gulp test-ci"
+  },
+  "license": "MIT"
+}
