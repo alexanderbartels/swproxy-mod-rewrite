@@ -6,7 +6,7 @@
 
 ## How to use the RewriteMod
 
-'''
+```javascript
 // register the mod
 proxy.registerMod(ModRewrite);
 
@@ -15,7 +15,7 @@ proxy.rewriteRule(new RegExp('.*/some/path', ''), '/some/other/path', {});
 
 // change the domain for every request that ends with /some/path
 proxy.rewriteRule(new RegExp('.*/(some/path)', ''), 'https://example.com/$1', {});
-'''
+```
 
 [npm-image]: https://badge.fury.io/js/swproxy-mod.svg
 [npm-url]: https://npmjs.org/package/swproxy-mod
