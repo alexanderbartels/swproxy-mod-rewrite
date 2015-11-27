@@ -1,6 +1,6 @@
 {
   "name": "swproxy-mod-rewrite",
-  "version": "0.0.0-beta.2",
+  "version": "0.0.1",
   "description": "base package to write mods for the swproxy library",
   "homepage": "http://www.alexanderbartels.com/swproxy-www",
   "author": {

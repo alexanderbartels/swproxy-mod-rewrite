@@ -2,8 +2,32 @@
 
 /*eslint-disable no-alert, no-console */
 class ModRewriteRule {
-  constructor(proxy, args) {
-    console.log('Rewrite rule created: ', proxy, args);
+  constructor(srcUrl, destUrl, modifier) {
+    console.log('Rewrite rule created: ', srcUrl, destUrl, modifier);
+
+    this.srcUrl = srcUrl;
+    this.destUrl = destUrl;
+    this.modifier = modifier;
+  }
+
+  match(event) {
+    return this.srcUrl.test(event.request.url);
+  }
+
+  execute(originalEvent, event) {
+    console.log('execute rule for request: ', this.destUrl, originalEvent, event);
+
+    return new Promise((resolve) => {
+      let matches = this.srcUrl.exec(event.request.url);
+      let calculatedUrl = this.destUrl;
+
+      matches.forEach((match, i) => {
+        calculatedUrl = calculatedUrl.replace('$' + i, match);
+      });
+
+      event.request.url = calculatedUrl;
+      resolve(event);
+    });
   }
 }
 /*eslint-enable no-alert, no-console */
@@ -26,9 +50,11 @@ class ModRewrite {
    * @param proxy the swproxy instances
    * @returns {Function} function that returns a factory function to create rules
    */
-  static factoryMethod(proxy) {
-    return function (...args) {
-      return new ModRewriteRule(proxy, args);
+  static factoryMethod(swproxy) {
+    return (srcUrl, destUrl, modifier) => {
+      let rule = new ModRewriteRule(srcUrl, destUrl, modifier);
+      swproxy.addFetchRule(rule);
+      return rule;
     };
   }
 }
