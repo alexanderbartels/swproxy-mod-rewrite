@@ -1,7 +1,7 @@
 {
   "name": "swproxy-mod-rewrite",
-  "version": "0.0.1",
-  "description": "base package to write mods for the swproxy library",
+  "version": "0.0.2",
+  "description": "Mod to extend the swproxy with url rewrite functionallity.",
   "homepage": "http://www.alexanderbartels.com/swproxy-www",
   "author": {
     "name": "Alexander Bartels",
@@ -13,6 +13,7 @@
   "main": "dist/index.js",
   "keywords": [
     "swproxy",
+    "swproxy-mod",
     "serviceworker",
     "proxy"
   ],
