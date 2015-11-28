@@ -17,8 +17,8 @@ proxy.rewriteRule(new RegExp('.*/some/path', ''), '/some/other/path', {});
 proxy.rewriteRule(new RegExp('.*/(some/path)', ''), 'https://example.com/$1', {});
 ```
 
-[npm-image]: https://badge.fury.io/js/swproxy-mod.svg
-[npm-url]: https://npmjs.org/package/swproxy-mod
-[daviddm-image]: https://david-dm.org/alexanderbartels/swproxy-mod.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/alexanderbartels/swproxy-mod
+[npm-image]: https://badge.fury.io/js/swproxy-mod-rewrite.svg
+[npm-url]: https://npmjs.org/package/swproxy-mod-rewrite
+[daviddm-image]: https://david-dm.org/alexanderbartels/swproxy-mod-rewrite.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/alexanderbartels/swproxy-mod-rewrite
 
