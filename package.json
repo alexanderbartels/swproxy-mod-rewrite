@@ -1,6 +1,6 @@
 {
   "name": "swproxy-mod-rewrite",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mod to extend the swproxy with url rewrite functionallity.",
   "homepage": "http://www.alexanderbartels.com/swproxy-www",
   "author": {

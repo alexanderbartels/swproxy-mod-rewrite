@@ -17,6 +17,18 @@ proxy.rewriteRule(new RegExp('.*/some/path', ''), '/some/other/path', {});
 proxy.rewriteRule(new RegExp('.*/(some/path)', ''), 'https://example.com/$1', {});
 ```
 
+### proxy.rewriteRule(srcUrl, destUrl, modifiers);
+srcUrl:
+   - the rule will only executed for requests, that matches this regular expression.
+
+destUrl: 
+  - the request Url will be modified, so the that the destUrl will be used, to make the final request.
+
+modifiers:
+  - modifiers are an JavaScript Object "{}"
+  - They can be swproxy specific like 'stopPropagation'. See (doc)[https://github.com/alexanderbartels/swproxy#modifier] for more information.
+  - ...
+
 [npm-image]: https://badge.fury.io/js/swproxy-mod-rewrite.svg
 [npm-url]: https://npmjs.org/package/swproxy-mod-rewrite
 [daviddm-image]: https://david-dm.org/alexanderbartels/swproxy-mod-rewrite.svg?theme=shields.io

@@ -3,7 +3,6 @@ import { assert } from 'chai';
 
 import ModRewrite from '../src/swproxy-mod-rewrite.js';
 
-
 describe('swproxy:mod-rewrite', function () {
   before(function (done) {
     done();

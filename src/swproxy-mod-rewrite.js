@@ -1,5 +1,4 @@
 
-
 /*eslint-disable no-alert, no-console */
 class ModRewriteRule {
   constructor(srcUrl, destUrl, modifier) {
@@ -26,8 +25,19 @@ class ModRewriteRule {
       });
 
       event.request.url = calculatedUrl;
-      resolve(event);
+      resolve(this.mergeModifier(event, this.modifier));
     });
+  }
+
+  /**
+   * merges the current available modifiers into the event object
+   * @param event
+   * @param modifier
+   * @returns {*}
+     */
+  mergeModifier(event, modifier) {
+    event.stopPropagation = modifier.stopPropagation;
+    return event;
   }
 }
 /*eslint-enable no-alert, no-console */
