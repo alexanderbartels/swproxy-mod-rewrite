@@ -69,4 +69,7 @@ class ModRewrite {
   }
 }
 
-export default ModRewrite;
+export {
+  ModRewrite as default,
+  ModRewriteRule
+};

@@ -29,6 +29,10 @@ modifiers:
   - They can be swproxy specific like 'stopPropagation'. See (doc)[https://github.com/alexanderbartels/swproxy#modifier] for more information.
   - ...
 
+## License
+
+MIT © [Alexander Bartels](http://www.alexanderbartels.com)
+
 [npm-image]: https://badge.fury.io/js/swproxy-mod-rewrite.svg
 [npm-url]: https://npmjs.org/package/swproxy-mod-rewrite
 [daviddm-image]: https://david-dm.org/alexanderbartels/swproxy-mod-rewrite.svg?theme=shields.io
