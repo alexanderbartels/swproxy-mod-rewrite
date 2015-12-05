@@ -1,6 +1,5 @@
 
 import { assert } from 'chai';
-
 import { default as ModRewrite, ModRewriteRule } from '../src/swproxy-mod-rewrite.js';
 
 describe('swproxy:mod-rewrite', function () {

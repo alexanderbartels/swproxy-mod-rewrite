@@ -1,6 +1,6 @@
 {
   "name": "swproxy-mod-rewrite",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mod to extend the swproxy with url rewrite functionallity.",
   "homepage": "http://www.alexanderbartels.com/swproxy-www",
   "author": {
@@ -10,7 +10,7 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "dist/swproxy-mod-rewrite.js",
   "keywords": [
     "swproxy",
     "swproxy-mod",
